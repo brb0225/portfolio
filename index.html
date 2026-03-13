@@ -1,1 +1,136 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <link rel="stylesheet" href="styles.css">\n    <title>Portfolio</title>\n</head>\n<body>\n    <nav>\n        <ul>\n            <li><a href="#about">About</a></li>\n            <li><a href="#projects">Projects</a></li>\n            <li><a href="#experience">Experience</a></li>\n            <li><a href="#contact">Contact</a></li>\n        </ul>\n    </nav>\n    <header class="hero">\n        <h1>Welcome to My Portfolio</h1>\n        <p>Discover my work and experiences.</p>\n    </header>\n    <section id="about">\n        <h2>About Me</h2>\n        <p>Information about myself goes here.</p>\n    </section>\n    <section id="projects">\n        <h2>Projects</h2>\n        <p>Details of my projects go here.</p>\n    </section>\n    <section id="experience">\n        <h2>Experience</h2>\n        <p>Information about my work experience goes here.</p>\n    </section>\n    <section id="contact">\n        <h2>Contact</h2>\n        <p>Contact information goes here.</p>\n    </section>\n    <script src="script.js"></script>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio - Brady Black</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#aerospace">Aerospace Lab</a></li>
+            <li><a href="#pppl">PPPL</a></li>
+            <li><a href="#capstone">Capstone</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="IMG_8533.JPG" alt="Profile Picture" class="profile-pic">
+        <p>Engineering professional with experience in aerospace research, laser diagnostics, and plasma physics.</p>
+    </section>
+
+    <section id="aerospace">
+        <h2>Aerospace Laboratory for Laser ElectroMagnetics & Optics</h2>
+        
+        <article>
+            <h3>Hypersonic Wind Tunnel Testing</h3>
+            <img src="HXT image.png" alt="HXT Facility">
+            <h4>Project Objective:</h4>
+            <p>The National Aerothermochemistry & Hypersonic Flight Laboratory (NAHL) has multiple hypersonic wind tunnels including the Hypervelocity Expansion Tunnel (HXT) capable of flight enthalpy conditions and Actively-Controlled Expansion Tunnel (ACE) capable of varying Mach number through an actuated nozzle.</p>
+            <h4>Personal Contributions:</h4>
+            <ul>
+                <li>Read P&ID schematic design for high pressure HXT hypersonic wind tunnel gas supply system, then manually replaced and tested fluid hardware such as piping, unions, ball valves, and gas regulators to working pressure</li>
+                <li>Tested and calibrated sensors such as pressure transducers and thermocouples through low noise preamplifiers, signal conditioners, and data acquisition systems</li>
+                <li>Prepared standard operating procedures (SOPs), Project Safety Analyses (PSAs), and Technology Control Plans (TCPs) to plan safe, secure, and organized tests</li>
+            </ul>
+            <img src="ACE image.png" alt="ACE Facility">
+            <ul>
+                <li>Designed and built a custom gas injection system that safely supplied nitric oxide gas through compatible fluid components including ball valves, mass flow controllers, compressed gas cylinders, and vacuum feed-throughs</li>
+                <li>Performed simultaneous Schlieren, Focused Laser Differential Interferometry (FLDI), and Planar Laser Induced Fluorescence (PLIF) to analyze complex hypersonic flow interactions</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>UV/IR Sodium Planar Laser Induced Fluorescence (PLIF)</h3>
+            <img src="Estes png.png" alt="Na PLIF Imaging">
+            <h4>Project Objective:</h4>
+            <p>UV/IR Sodium Planar Laser Induced Fluorescence (PLIF) is a laser imaging technique. I used this laser diagnostic to image an Estes hobby solid rocket motor plume at 250 kHz using a pulse burst laser system and intensified high-speed camera.</p>
+            <h4>Personal Contributions:</h4>
+            <ul>
+                <li>Optimized optical parametric oscillator (OPO) conversion efficiency and wavelength through a piezoelectric motor-controlled cavity mirrors to achieve sodium fluorescence threshold</li>
+                <li>Aligned the internal optics of a Spectral Energies QuasiModo Nd:YAG pulse burst laser to ensure optimal M2 pump beam quality into an OPO</li>
+                <li>Configured pulse/delay generators to temporally align laser pulses with high-speed camera and intensifier gates at nanosecond scale precision</li>
+                <li>Spectrally isolated the fluorescence wavelength by targeting a particular excitation scheme and using a system of short-pass and long-pass optical filters to block background emission</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Electron Transpiration Cooling (ETC)</h3>
+            <img src="image2.png" alt="ETC Setup">
+            <h4>Project Objective:</h4>
+            <p>Cesium-enhanced Electron Transpiration Cooling (ETC) is a type of Thermal Protection System (TPS) that takes advantage of thermionic electron emission to cool hypersonic leading edges. I maintained the vacuum chamber assembly used to create this environment and characterized its nominal operation.</p>
+            <h4>Personal Contributions:</h4>
+            <ul>
+                <li>Configured LabVIEW .vi control panels for Arduino Relay systems to automatize data acquisition and hold temperature in a vacuum chamber using water cooling, resistive heater, and thermocouple feedback loops</li>
+                <li>Performed Raman Spectroscopy using a Princeton Instruments IsoPlane Spectrometer on air in the chamber as a control case and aligned scattering collection optics</li>
+                <li>Designed and built a current measurement circuit to monitor current across the electrode gap and indicate plasma formation</li>
+                <li>Assembled cesium injection system to safely crush ampules, filter glass, and insert cesium into the vacuum chamber with inert gas backing pressure</li>
+                <li>Achieved heat pipe function using capillary action through wicks with water vapor as the working fluid, then validated with temperature measurements along the length of each arm</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Rotational Raman & Thomson Scattering MATLAB Applet</h3>
+            <img src="RS_TS App Screenshot.png" alt="MATLAB Applet">
+            <h4>Project Objective:</h4>
+            <p>Rotational Raman & Thomson Scattering are types of laser induced scattering that can be observed simultaneously in low-temperature plasmas due to the mixture of free electrons in the plasma and non-monatomic species in the gas. Based on the spectral profiles of this scattering, plasma parameters can be measured such as electron temperature, electron number density, and gas temperature.</p>
+            <h4>Personal Contributions:</h4>
+            <ul>
+                <li>Coded a MATLAB nonlinear least-square fitting model with multiple parameters for Rotational Raman and Thomson scattering spectra analysis to determine electron temperature, electron number density, and gas temperature that would be generated in a hypersonic environment</li>
+                <li>Designed the front-end user interface (UI) of the MATLAB applet to organize file and image inputs and display plasma parameter outputs with quantified uncertainties and residuals</li>
+                <li>Processed spectrographic images to optimize the best signal-to-noise ratio from experiments</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="pppl">
+        <h2>Princeton Plasma Physics Laboratory (PPPL)</h2>
+        
+        <article>
+            <h3>Laser Thomson Scattering (LTS)</h3>
+            <img src="Collection Optics CAD.png" alt="Thomson Scattering Collection Optics">
+            <h4>Project Objective:</h4>
+            <p>Laser Thomson Scattering (LTS) is a non-intrusive low-temperature plasma diagnostic used to measure electron temperature and number density. Hall-effect thruster plume environments can be replicated through an ExB Penning discharge plasma and measured with LTS.</p>
+            <h4>Personal Contributions:</h4>
+            <ul>
+                <li>Designed, built, and aligned LTS collection optics to direct probe laser scattering off of plasma into a spectrometer while communicating remotely with staff on physical constraints</li>
+                <li>Utilized my Rotational Raman & Thomson Scattering MATLAB Applet to measure accurate electron temperature and density measurements in an ExB Penning discharge</li>
+            </ul>
+            <img src="Thomson_Spectra.png" alt="Thomson Spectra">
+        </article>
+    </section>
+
+    <section id="capstone">
+        <h2>Senior Capstone</h2>
+        
+        <article>
+            <h3>Short Take-Off & Landing (STOL) RC Aircraft</h3>
+            <img src="Aircraft CAD Isometric.png" alt="STOL Aircraft CAD">
+            <h4>Project Objective:</h4>
+            <p>Short Take-Off & Landing (STOL) aircraft are designed to take-off and land quickly on short rugged runways that are common in rural areas. Heavy payload was also a requirement in the aircraft design, which made this capstone a multi-faceted optimization problem.</p>
+            <h4>Personal Contributions:</h4>
+            <ul>
+                <li>Designed with CAD and manufactured the wing box, payload bay, trailing-link nose gear, and internal wing structure to optimize weight, strength, and aircraft stability</li>
+                <li>Performed low-speed wind tunnel tests with a scaled-down model mounted on a sting balance to measure forces expected to act on the aircraft during flight tests</li>
+                <li>Communicated effectively, organized logistics, and executed design goals as a team of engineers to have multiple successful flights with our final aircraft design</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:brblack02@gmail.com">brblack02@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/brb0225">github.com/brb0225</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Brady Black. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
